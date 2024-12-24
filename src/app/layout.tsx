@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import {  Nunito } from "next/font/google";
+import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
+
+
 import "./globals.css";
 
 const nunito = Nunito({
@@ -23,7 +27,9 @@ export default function RootLayout({ children,}: IRootLayout) {
       <body
         className={`${nunito.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
