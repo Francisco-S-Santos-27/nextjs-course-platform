@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        text: 'var(--color-text)',
+        error: 'var(--color-error)',
+        paper: 'var(--color-paper)',
+        primary: 'var(--color-primary)',
+        background: 'var(--color-background)',
+        primaryContrast: 'var(--color-primary-contrast)',
+    },
   },
+},
   plugins: [],
 } satisfies Config;
